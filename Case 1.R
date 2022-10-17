@@ -17,13 +17,13 @@ library(scales)
 #========================
 
 #set the working directory 
-setwd("C:/Users/plue9/Documents/Data Analysis/Case Study 1/CSV_files")
+setwd("C:/.../CSV_files")
 
 #confirm the working directory
 getwd()
 
 #merge all csv files into one data frame
-df <- list.files(path="C:/Users/plue9/Documents/Data Analysis/Case Study 1/CSV_files", full.names = TRUE) %>%
+df <- list.files(path="C:/.../CSV_files", full.names = TRUE) %>%
   lapply(read_csv) %>%
   bind_rows
 
